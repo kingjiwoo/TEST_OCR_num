@@ -6,3 +6,4 @@
 - numpy 
 - matplotlib
 - tensorflow
+- - Visual Studio Code에서 conda 가상환경 생성( 
