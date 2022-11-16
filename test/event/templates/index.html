@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+      <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=qdu3m0mwb7"></script>
+      <style>
+        @font-face {
+          font-family: 'GangwonEduPowerExtraBoldA';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+          font-weight: normal;
+          font-style: normal;
+          }
+        *{padding:0;margin:0}
+        .a{text-decoration:none;color:black;font-size:15px; text-align: center; margin-top: 30px; }
+        .b{text-decoration:none;color:black;font-size:15px; text-align: center; margin-bottom: 30px; }
+        .header{width:100%;overflow:hidden;height:70px;background-color:#FFFFFF;margin:auto;}      
+        .img{width: 100px;overflow:hidden;height: 10px;text-align: center; margin: auto; display: block;}
+        .main {background: #FAFAFA; min-height: 700px;}
+        .footer{background: #FAFAFA; min-height: 700px;}
+        .box{padding:10px;margin-left: 200px; margin-right: 200px;border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px;}
+        .btnSubmit{width:300px; margin:auto;margin-top: 30px; display:block; height: 60px;font-family: 'GangwonEduPowerExtraBoldA';
+        border-radius: 30px 30px 30px 30px / 30px 30px 30px 30px;background-color: #07004f; color: #FFFFFF;
+      font-size: larger;}
+        .p{text-align: center; margin-top: 30px; margin-bottom: 30px; display: block; font-family: 'GangwonEduPowerExtraBoldA';}
+        .logo{text-align: center;margin-left: 240px; display: inline-block;}
+        .block{text-align: center; display: block;margin-left: 200px; margin-right: 200px;}
+        .index{font-family: 'GangwonEduPowerExtraBoldA';}
+        .snt{text-align: center; display: inline-block;margin-right:240px; margin-top: 10px; font-family: 'GangwonEduPowerExtraBoldA';}
+        </style>
+        <title>다풀자 서비스</title>
+    </head>
+    <body>
+        <nav class = 'header'>
+            <p5 class ='snt'>다풀자</p5>
+          </nav>
+          <main class = 'main'>
+            <hr> 
+            
+            <div class = 'box'>
+                <form method = "POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <p> 사진을 업로드하세요</p>
+                    <input name="image" type="file">
+            
+            </div>
+          </main>
+    </body>
+</html>
